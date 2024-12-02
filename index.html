@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM [VA]</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <main>
+      <form action="https://www.w3schools.com/action_page.php">
+        <fieldset>
+          <legend>PERSONAL DATA</legend>
+          <section>
+            <div>
+              <label for="firstName">FIRST NAME:</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                maxlength="50"
+              />
+            </div>
+            <div>
+              <label for="lastName">LAST NAME:</label>
+              <input type="text" id="lastName" name="lastName" maxlength="50" />
+            </div>
+            <div>
+              <label for="birthdate">BIRTHDATE:</label>
+              <input
+                type="date"
+                name="BIRTHDATE"
+                id="birthdate"
+                name="birthdate"
+              />
+              <span id="birthdateMSG"></span>
+            </div>
+            <div>
+              <label for="nif-nie">NIF / NIE:</label>
+              <input type="text" maxlength="9" id="nif-nie" name="nif-nie" />
+            </div>
+            <div>
+              <label for="email">EMAIL:</label>
+              <input type="text" id="email" name="email" maxlength="254" />
+            </div>
+            <div>
+              <label for="telephone">TELEPHONE NUMBER:</label>
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                maxlength="25"
+              />
+            </div>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <legend>SPORTS COURT RESERVATION DATA</legend>
+          <section>
+            <div>
+              <label for="bookingDate">BOOKING DATE:</label>
+              <input
+                type="datetime-local"
+                name="bookingDate"
+                id="bookingDate"
+              />
+              <span id="bookingDateMSG"></span>
+            </div>
+            <div>
+              <label for="sport">SPORT:</label>
+              <select name="sport" id="sport">
+                <option hidden value="void">-Choose one-</option>
+                <optgroup label="Football">
+                  <option value="f-c1">Court 1 (Grass)</option>
+                  <option value="f-c2">Court 2 (Indoor)</option>
+                </optgroup>
+                <optgroup label="Basketball">
+                  <option value="b-c1">Court 1</option>
+                  <option value="b-c2">Court 2</option>
+                  <option value="b-c3">Court 3 (Kids)</option>
+                </optgroup>
+                <optgroup label="Tennis">
+                  <option value="t-c1">Court 1 (Hard)</option>
+                  <option value="t-c2">Court 2 (Grass)</option>
+                </optgroup>
+                <optgroup label="Volleyball">
+                  <option value="v-c1">Court 1</option>
+                  <option value="v-c2">Court 2</option>
+                </optgroup>
+                <optgroup label="Waterpolo">
+                  <option value="w-c1">Pool 1 (Grass)</option>
+                </optgroup>
+              </select>
+              <span id="sportMSG"></span>
+            </div>
+          </section>
+        </fieldset>
+
+        <input type="submit" value="SEND BOOKING DATA" id="submit" />
+      </form>
+    </main>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+html,
+body {
+  background-color: antiquewhite;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+html form,
+body form {
+  padding: 1em;
+}
+html form fieldset,
+body form fieldset {
+  background-color: burlywood;
+  color: rgb(39, 39, 39);
+  border: 2px solid rgb(39, 39, 39);
+  border-radius: 10px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+html form fieldset legend,
+body form fieldset legend {
+  background-color: darkolivegreen;
+  color: antiquewhite;
+  border: 2px solid rgb(39, 39, 39);
+  border-radius: 10px;
+  padding: 0.5em;
+}
+html form fieldset section div,
+body form fieldset section div {
+  margin: 0.5em;
+}
+html form fieldset section div label,
+body form fieldset section div label {
+  font-weight: bold;
+}
+html form fieldset section div input,
+html form fieldset section div select,
+body form fieldset section div input,
+body form fieldset section div select {
+  padding: 0.25em;
+  font-weight: bold;
+}
+html form fieldset section div input.dataError,
+html form fieldset section div select.dataError,
+body form fieldset section div input.dataError,
+body form fieldset section div select.dataError {
+  border: 2px solid darkred;
+  background-color: tomato;
+  color: antiquewhite;
+}
+html form fieldset section div span,
+body form fieldset section div span {
+  color: darkred;
+}
+html form input#submit,
+body form input#submit {
+  cursor: pointer;
+  background-color: burlywood;
+  border: 2px solid burlywood;
+  color: rgb(39, 39, 39);
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+html form input#submit:hover,
+body form input#submit:hover {
+  background-color: darkolivegreen;
+  color: antiquewhite;
+  border-color: darkolivegreen;
+}
+html form input#submit:active,
+body form input#submit:active {
+  background-color: green;
+  transform: scale(0.95);
+}/*# sourceMappingURL=style.css.map */
